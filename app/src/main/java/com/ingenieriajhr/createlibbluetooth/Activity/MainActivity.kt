@@ -1,7 +1,6 @@
 
-package com.ingenieriajhr.createlibbluetooth
+package com.ingenieriajhr.createlibbluetooth.Activity
 
-import android.bluetooth.BluetoothDevice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +8,8 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.ingenieriajhr.blujhr.BluJhr
+import com.ingenieriajhr.createlibbluetooth.R
+import com.ingenieriajhr.createlibbluetooth.Servicios.UsuarioServicio
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -63,8 +64,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
         buttonSend.setOnClickListener {
             blue.bluTx(edtTx.text.toString())
         }
@@ -73,9 +72,6 @@ class MainActivity : AppCompatActivity() {
             blue.closeConnection()
             true
         }
-
-
-
     }
 
     private fun rxReceived() {
@@ -110,8 +106,4 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
     }
-
-
-
-
 }
