@@ -13,6 +13,6 @@ import retrofit2.http.Url
         *usando corrutinas tendremos que añadir "suspend" para que funcione nuestro código.
     */
 interface UsuarioInterface {
-    @GET("api/Registro/MostrarUsuario?idUsuario=1")
+    @GET("api/Registro/MostrarUsuario?idUsuario=2")
      suspend fun ObtenerUsuarioInterface() :Response<RespuestaModelo>
 }

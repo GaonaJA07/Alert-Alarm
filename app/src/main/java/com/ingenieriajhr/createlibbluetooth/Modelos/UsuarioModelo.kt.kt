@@ -8,4 +8,6 @@ data class UsuarioModelo(
     @SerializedName("edad") var edad:Int,
     @SerializedName("correo") var correo: String,
     @SerializedName("sensors") var sensors: List<Objects>,
+    @SerializedName("telefono") var telefono: String,
+    @SerializedName("mensaje") var mensaje: String,
     )
