@@ -62,16 +62,17 @@ override fun onCreate(savedInstanceState: Bundle?) {
                 .create(UsuarioInterface::class.java)
                 .ObtenerUsuarioInterface()
 
+            var datos = servicio.body()
+            println("$datos" + "jjjjjjjjjjjjjjjjjjjjjjjjjjjjj")
+
             if(servicio == null){
                 println("error jaja .....................")
             }
 
             if (servicio.isSuccessful) {
-                var datos = servicio.body()
-                println("$datos" + "jjjjjjjjjjjjjjjjjjjjjjjjjjjjj")
                 println("jajaja")
             }else{
-                println("jijiji")
+                println("$servicio")
             }
         }
     }

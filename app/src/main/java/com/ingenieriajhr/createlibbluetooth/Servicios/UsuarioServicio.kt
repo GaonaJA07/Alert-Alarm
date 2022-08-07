@@ -18,7 +18,7 @@ class UsuarioServicio {
 
     fun obtenerUsuario(): Retrofit {
             val x = Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:7028/")
+                .baseUrl("http://192.168.0.16:9095/")
                 .client(okHttpClient())
                 .addConverterFactory(GsonConverterFactory.create()) //hará el trabajo de recuperar el JSON y pasarlo a  tipo RespuestaModelo
                 .build()

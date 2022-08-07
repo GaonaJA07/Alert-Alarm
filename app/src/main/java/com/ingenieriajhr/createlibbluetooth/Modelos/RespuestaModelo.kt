@@ -1,10 +1,11 @@
 package com.ingenieriajhr.createlibbluetooth.Modelos
 
+import UsuarioModelo
 import com.google.gson.annotations.SerializedName
 import java.util.*
 
 data class RespuestaModelo(
-    @SerializedName("Contenido") var Contenido: List<Objects>,
-    @SerializedName("Estado") var Estado: String,
-    @SerializedName("Error") var Error: String
+    @SerializedName("contenido") var Contenido: List<UsuarioModelo>,
+    @SerializedName("estado") var Estado: String,
+    @SerializedName("error") var Error: String
 )
